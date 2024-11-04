@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e0c5;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+  
+.list_item ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.list_item li {
+    color: #090909;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.list_item li:hover {
+    color: #2b7374; 
+    text-decoration: underline;
+}
+ 
