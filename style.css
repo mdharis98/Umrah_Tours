@@ -1,4 +1,3 @@
-/* style.css */
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +12,13 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    /* padding: 15px 0; */
-    /* position: fixed; */
 }
 
 .container {
-    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed; */
 }
 .logo{
     display: flex;
@@ -31,31 +26,46 @@ body {
 .logo h1{
     padding-top: 30px;
     color: gold;
-    font-family:'Poppins', sans-serif;/* For headings */
-    /* font-family: 'Roboto', sans-serif; For body text */
-    
+    font-family:'Poppins', sans-serif;
 }
 .logo img{
     height: 100px;
-    /* font-size: 24px; */
-    /* font-weight: bold; */
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin-right: 5rem;
+    font-size: 20px;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+img{
+    border-radius: 10px;
+}
+
+img, .hover-scale {
+    transition: transform 0.3s ease;
+}
+
+img:hover, .hover-scale:hover {
+    transform: scale(1.03);
 }
 
 
-
 .hero-section {
-    background-image: url('assets/background\ img.jpg'); /* Replace with the actual image path */
+    background-image: url('assets/background\ img.jpg'); 
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -70,9 +80,6 @@ body {
 .box{
     height: 69vh;
     width:47vh;
-    /* opacity: 0.2; */
-    /* border-top-left-radius: 50%;
-    border-top-right-radius:50%;  */
     border-radius: 10px;
     margin-right: 100px;
     padding-bottom: 2px;
@@ -83,7 +90,6 @@ body {
     height: 100%;
     opacity: 0.9;
    border-radius: 10px;
-    /* padding-bottom: 2px; */
     padding:10px;
     z-index: 200;
 }
@@ -95,7 +101,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay effect */
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .hero-content {
@@ -126,46 +132,46 @@ body {
     border-radius: 5px;
 }
 
- 
-
-
-/* About Section */
 .sep{
     background-color: #f5f5f5;
     padding: 40px;
     text-align: center;
     line-height: 1.9;
 }
+
 .overlay{
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay effect */
-    /* padding: 60px 0; */
+    background: rgba(0, 0, 0, 0.5);
 }
+
 .content{
     width: 90%;
     margin: auto;
-    /* display: flex; */
     justify-content: space-between;
     align-items: center;
    
     padding: 20px;
 }
+
 .content1{
     display: flex;
 }
+
 .item{
-    /* height: auto; */
     border-radius: 15px;
     background-color: rgb(127, 137, 127);
     padding: 15px ;
     border-top-right-radius: 0px;
     border-bottom-right-radius:0px ;
 }
+
 .item h1{
     color: goldenrod;
 }
+
 .item p{
     text-align: justify;
 }
+
 .box1{
    padding: 10px;
     background-color: white;
@@ -175,26 +181,29 @@ body {
     display: flex;
 
 }
+
 .box1 .img img{
     height: 100%;
     border-top-right-radius:15px ;
     border-bottom-right-radius:15px ;
 
 }
+
 .outer-card1{
     display: flex;
     gap: 30px;
 }
+
 .card1{
     width: 300px;
     height: 200px;
     padding: 10px ;
-    /* border: 2px solid black; */
     background-color: white;
     border-radius: 15px;
     box-shadow: 2px 2px 14px rgb(39, 39, 39);
     
 }
+
 .card1 h3{
     color: goldenrod;
     font-size: 500px;
@@ -211,12 +220,13 @@ body {
 
     
 }
+
 .sub{
     margin-bottom:35px ;
 }
+
 .about-section {
     background-color: #fff;
-    /* padding: 60px 0; */
     text-align: left;
     background-image: url(assets/bg.avif);
     background-repeat: no-repeat;
@@ -227,7 +237,6 @@ body {
 .about-section h2 {
     font-family: 'Allura', cursive;
     font-size: 36px;
-    /* color: #333; */
     margin-bottom: 20px;
 }
 
@@ -251,8 +260,6 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
 }
-/* Services section  */
-
 
 .back{
     background-image: url(assets/background3.webp);
@@ -268,26 +275,23 @@ body {
 
 .back h1{
     font-size: 60px;
-    
-
 }
+
 .back p{
     font-size: 20px;
 }
+
 .services{
     background: rgb(149, 157, 149);
-
 }
 
 .card-container {
     display: flex;
-    /* gap: 20px; */
     flex-wrap: wrap;
     padding-top: 60px;
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
-
 
 .card {
     position: relative;
@@ -313,19 +317,17 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8); /* White overlay with transparency */
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     display: flex;
-    /* flex-direction: column; */
     gap: 60px;
     align-items: center;
     justify-content: center;
     padding: 1px 30px;
     margin: 30px;
-    text-decoration: none;
- 
-   
+    text-decoration: none;   
 }
+
 .overlay a{
     text-decoration: none;
     color: #333;
@@ -334,12 +336,11 @@ body {
 .overlay1 span{
     font-size: 50px;
     color: goldenrod;
-    
 }
+
 .overlay1 h3 {
     font-size: 24px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;    
 }
 
 .overlay1 p {
@@ -347,35 +348,34 @@ body {
     line-height: 1.5;
 }
 
-/* Contact Section */
 .contact-top{
     height: 300px;
     background-color: rgb(149, 157, 149);;
 }
+
 .c-card{
     display: flex;
     gap: 90px;
     padding: 50px;
     justify-content: center;
 }
+
 .c-in-card{
     width: 300px;
     height: 200px;
     padding: 10px ;
-    /* border: 2px solid black; */
     background-color: white;
     border-radius: 15px;
     box-shadow: 2px 2px 14px rgb(39, 39, 39);
     text-align: justify;
     
 }
+
 .c-in-card h3{
     color: goldenrod;
     font-size: 25px;
     line-height: 1.5;
     padding: 5px;
-   
-
 }
 
 .c-sub span{
@@ -384,113 +384,116 @@ body {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     font-size: 25px;
-    box-shadow: 2px 2px 14px rgb(39, 39, 39);
-
-    
+    box-shadow: 2px 2px 14px rgb(39, 39, 39);    
 }
+
 .c-sub{
     margin-bottom:35px ;
 }
+
 .c-info{
     background-image: url(assets/background4.jpg);
     background-size: cover;
    
 }
+
 .c-detail{
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
 }
+
 .c-img{
     height: 550px;
     border-radius: 15px;
     background-color: white;
 
 }
+
 .c-img img{
     height: 100%;
     border-radius: 15px;
 
 }
+
 .msg{
     margin-top: 50px;
     line-height: 2.5;
     color: white;
 }
 
-
-  .form-group {
+.form-group {
     margin-bottom: 15px;
-  }
+}
 
-  .form-group label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: white;
     outline: none;
 
-  }
+}
 
-  .form-group input {
+.form-group input {
     width: 500px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 20px;
     box-sizing: border-box;
-  }
-  .form-group textarea{
+}
+  
+.form-group textarea{
     width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 20px;
     box-sizing: border-box;
     
-  }
+}
 
-  .form-group input[type="submit"] {
+.form-group input[type="submit"] {
     background-color: brown;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
     border: none;
     padding: 10px;
-  }
+}
 
-  .form-group input[type="submit"]:hover {
+.form-group input[type="submit"]:hover {
     background-color: brown;
-  }
+}
 
-/* Footer */
 .footer {
     background-color: #333;
     color: #fff;
-    /* text-align: center; */
     padding: 20px 0;
-  
     font-size: 14px;
     line-height: 2.5;
    
 }
+
 .logo1{
     display: flex;
 }
+
 .logo1 h1{
     padding-top: 30px;
     color: gold;
-    font-family:'Poppins', sans-serif;/* For headings */
-    /* font-family: 'Roboto', sans-serif; For body text */
+    font-family:'Poppins', sans-serif;
     
 }
+
 .logo1 img{
     height: 100px;
-    /* font-size: 24px; */
-    /* font-weight: bold; */
 }
+
 .outer-footer{
     display: flex;
     justify-content: space-evenly;
 }
+
 .f2{
     width: 250px;
 }
